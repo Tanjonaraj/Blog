@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&family=Uchen&display=swap');
+body{
+	margin: 25px 50px;
+	background: url("../img/gamer2.jpg") no-repeat fixed;
+	background-size: cover;
+	font-family: 'Uchen', serif;
+}
+nav h1{
+	color: darkred;
+	font-family: 'Otomanopee One', sans-serif;
+	font-size: 30px;
+}
+nav{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+}
+nav .onglets{
+	margin-top: 35px;
+}
+nav .onglets a{
+	font-size: 20px;
+	text-decoration: none;
+	color: greenyellow;
+	margin-right: 10px;
+	background: red;
+	margin: 5px;
+	padding: 8px;
+}
+nav .onglets a:hover{
+	background: blue;
+	color: whitesmoke;
+
+}
+.articles{
+	margin-top: 30px;
+
+}
+.articles .article{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+	color: whitesmoke;
+}
+.articles .article .gauche img{
+	height: 300px;
+	width: 500px;
+}
+.articles .article .droite{
+	max-width: 50%;
+	margin-left: 40px;
+}
+.articles .article .droite p.date{
+	color:#808080;
+}
+.articles .article .droite p.description{
+	color:whitesmoke;
+	background:#737373;
+	margin: 3px;
+	padding: 8px;
+}
+footer{
+	color: whitesmoke;
+}
+@media screen and (max-width: 640px){
+	body{
+		margin: 10px 20px;
+	}
+	nav .onglets{
+		margin-top: -10px;
+	}
+	.articles .article .gauche img{
+		height: 100%;
+		width: 100%;
+	} 
+	.articles .article .droite {
+		margin: 0;
+		max-width: 100%;
+	}
+}
+
